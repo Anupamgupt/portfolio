@@ -1,35 +1,35 @@
+
 h1.about{
     margin-top: 50px;
     text-align: center;
-    color:rgb(255, 136, 0);
-    font-size: 50px;
+    color:#f7af24;
+    font-size: 70px;
 }
 .aboutme{
     
-    /* height: 80vh; */
-    /* width: 100vw;  */
-    /* background-color:violet; */
+   
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 50px;
-    margin-bottom: 50px;
+   
     /* background-color: tomato; */
 }
 .leftabout{
-
+  
     flex:1;
-   
+    
     
 }
 .img2container{
-    /* position: absolute; */
+
     height: 350px;
     width:350px;
     margin-left: 20%;
     margin-right: 20px;
     /* background-color: turquoise; */
 }
+
 .mikey2{
     width: 100%;
     height: 100%;
@@ -47,30 +47,21 @@ h1.about{
     margin-right: 10%;
     margin-left: 10%;
 }
-@media screen and (max-width:1000px){
-    .aboutme{
+  
+
+@media only screen and (max-width: 768px){
+    h1.about{
+        font-size: 20px;
+    }
+    .aboutme {
         flex-direction: column;
     }
-    .img2container{
-        height: 300px;
-        width: 300px;
-        margin: 0;
-    }
-    .myself{
-        margin: 0;
-        margin-top: 40px;
-    }
-}
-@media screen and (max-width:768px){
-    .aboutme{
-        flex-direction: column;
-    }
-    .img2container{
+    .img2container {
         height: 250px;
         width: 250px;
         margin: 0;
     }
-    .myself{
+    .myself {
         margin: 0;
         margin-top: 40px;
     }
