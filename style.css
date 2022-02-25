@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap");
 * {
   box-sizing: border-box;
-  margin: 0;
+  margin: 0 auto;
   font-family: "Red Hat Display", sans-serif;
   
 
@@ -48,9 +48,6 @@ body {
   align-items: center;
   justify-content: space-around;
 }
-.right h4 a:hover{
-  border-bottom: 2px solid #a395e9;
-}
 h4 {
   font-size: 20px;
   font-weight: normal;
@@ -61,8 +58,12 @@ h4 {
 }
 h4 a {
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.7);
+  /* color: rgba(0, 0, 0, 0.7); */
   color: white;
+  transition: all 0.1s ease-in-out;
+}
+.right h4 a:hover{
+  border-bottom: 2px solid #a395e9;
 }
 
 .burger div {
@@ -124,6 +125,7 @@ i.fa-angle-up {
   padding-left: 20%;
 }
 h1.name {
+  margin: 0;
   font-size: 50px;
   letter-spacing: 1px;
   line-height: 51px;
@@ -142,6 +144,7 @@ p.des {
   color: white;
 }
 .btn {
+  margin: 0;
   margin-top: 15%;
   background-color: #a395e9;
   letter-spacing: 1px;
@@ -250,7 +253,7 @@ h1.about {
   margin-bottom: 20px;
   font-size: 70px;
   letter-spacing: 1px;
-  transition: all 1s;
+  transition: all 0.4s;
   color: #a395e9;
 }
 .skills-main h1:hover {
@@ -288,7 +291,7 @@ h1.about {
   overflow: hidden;
 }
 .skills img {
-  transition: all 1s;
+  transition: all 0.4s;
   width: 100px;
   height: 100px;
 }
@@ -304,7 +307,7 @@ h1.about {
   top: 0;
   left: -120%;
   transform: rotate(120deg);
-  transition: all 1.3s;
+  transition: all 0.5s;
 }
 .skills:hover .glare {
   display: block;
@@ -377,6 +380,11 @@ h1.about {
 .h:hover {
   transform: scale(1.05);
 }
+/* .b{
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+} */
 p.b {
   text-align: center;
   font-size: 15px;
@@ -427,10 +435,10 @@ p.b {
   align-items: center;
 }
 .form_about h4 {
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   color: white;
-  padding: 20px;
-  font-size: 40px;
+  /* padding: 20px; */
+  font-size: 30px;
   cursor: initial;
 }
 #form_box {
@@ -454,6 +462,7 @@ p.b {
   letter-spacing: 2px;
 }
 .input_fields:nth-child(5) {
+  margin: 0;
   grid-column-start: 1;
   grid-column-end: 3;
   width: 95%;
@@ -492,35 +501,34 @@ p.b {
   border-radius: 20px;
   cursor: pointer;
   background-color: #a395e9;
-  transition: background-color 1s;
+  transition: background-color 0.2s;
   color: white;
 }
 .input_fields input {
+  margin: 0;
   border: none;
   border-bottom: 2px solid white;
   background-color: #121229;
   outline: none;
   font-size: 1rem;
-  transition: border-bottom 1s;
+  transition: border-bottom 0.5s;
   color: #fff;
 }
 .btn:hover {
-  background-color: #a395e9;
-  color: white;
-  box-shadow: 0.5px 0.5px 20px #a395e9;
-  transition: color 0.5s;
+  background-color: #7d74a8;
+  /* color: white; */
+  transition: background-color 0.3s;
 }
 #btn:hover {
-  background-color: #a395e9;
-  color: white;
-  box-shadow: 0.5px 0.5px 50px #a395e9;
-  transition: color 0.5s;
+  background-color: #7d74a8;
+  /* color: white; */
+  transition: background-color 0.3s;
 }
 .input_fields input:focus {
   border-bottom: 2px solid #a395e9;
 }
 .footer {
-  height: 15vh;
+  height: 12vh;
   background-color: #a395e9;
   display: flex;
   justify-content: center;
@@ -528,18 +536,18 @@ p.b {
   box-shadow: 0 -7px 20px -8px gray;
 }
 .footer img {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   margin: 20px;
   cursor: pointer;
-  transition: all 1s;
+  transition: all 0.4s;
 }
 .footer img:hover {
   width: 60px;
   height: 60px;
 }
 .footer2 {
-  height: 10vh;
+  height: 3rem;
   background-color: #1a1a2e;
   color: white;
   display: flex;
@@ -547,8 +555,8 @@ p.b {
   align-items: center;
 }
 .footer2 p {
-  font-size: 25px;
-  letter-spacing: 5px;
+  font-size: 20px;
+  letter-spacing: 2.5px;
 }
 
 @media only screen and (min-width: 1440px) {
@@ -608,7 +616,7 @@ p.b {
     font-size: 1.7rem;
   }
   .form_about h4 {
-    font-size: 35px;
+    font-size: 25px;
   }
   .input_fields:nth-child(5) {
     width: 95%;
@@ -671,16 +679,18 @@ p.b {
     font-size: 60px;
   }
   .skills img {
-    height: 40px;
-    width: 40px;
+    height: 60px;
+    width: 60px;
   }
   #skills{
     height: 30rem;
   }
-
+  .descabout{
+    margin: 0 auto;
+  }
   .skills img:hover {
-    height: 45px !important;
-    width: 45px !important;
+    height: 65px;
+    width: 65px;
   }
   .container {
     flex-direction: column-reverse;
@@ -710,12 +720,9 @@ p.b {
   .des {
     padding-right: 10%;
   }
-  .container1 {
-    margin-bottom: 20%;
-  }
   .form_about h4 {
-    font-size: 20px;
-    padding: 10px;
+    font-size: 15px;
+    letter-spacing: 0.2px;
   }
   .form_details {
     grid-template-columns: auto;
@@ -747,12 +754,16 @@ p.b {
   }
 
   .footer img {
-    width: 30px;
-    height: 30px;
-  }
-  .footer img:hover {
     width: 40px;
     height: 40px;
+    margin: 10px;
+  }
+  .footer img:hover {
+    width: 50px;
+    height: 50px;
+  }
+  .footer{
+    height: 3.5rem;
   }
   .footer p {
     font-size: 15px;
@@ -768,23 +779,25 @@ p.b {
 }
 @media screen and (max-width: 425px) {
   .skills img {
-    height: 30px;
-    width: 30px;
-  }
-  .skills img:hover {
     height: 35px;
     width: 35px;
   }
-  .form_about h4 {
-    font-size: 15px;
+  .skills img:hover {
+    height: 40px;
+    width: 40px;
   }
-
+  .form_about h4 {
+    font-size: 10px;
+  }
+  .scrolltotop{
+    padding: 23px;
+  }
   .footer2 {
-    width: 100vw;
-    height: 8vh;
+    width: 100%;
+    height: 3rem;
   }
   .footer {
-    height: 10vh;
+    height: 3rem;
   }
   .contact h1 {
     font-size: 13px;
@@ -806,7 +819,12 @@ p.b {
   .footer img {
     width: 20px;
     height: 20px;
-    margin: 10px;
+    margin: 5px;
+  }
+  
+  .footer img:hover{
+    width: 25px;
+    height: 25px;
   }
 .a{
   font-size: 50px;
