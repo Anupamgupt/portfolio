@@ -11,7 +11,7 @@ html {
 }
 body {
   background-color: #1a1a2e;
-  
+  overflow-x: hidden;
 }
 .navbar {
   position: fixed;
@@ -210,6 +210,7 @@ h1.about {
   align-items: center;
   justify-content: center;
   padding: 50px;
+  width: 100vw;
   font-size: 24px;
   line-height: 30px;
   color: white;
@@ -371,7 +372,7 @@ h1.about {
 }
 .h p {
   text-align: justify;
-  padding: 0px 20px;
+  padding: 0px 20px 20px 20px;
   text-align: left;
   letter-spacing: 1.5px;
   color: white;
@@ -482,7 +483,7 @@ p.b {
   flex-direction: column;
 }
 .input_fields p {
-  font-size: 20px;
+  font-size: 15px;
   margin: 2px;
   letter-spacing: 0.2px;
 }
@@ -573,6 +574,9 @@ p.b {
     height: 400px;
     width: 700px;
   }
+  .input_fields input{
+    width: 100%;
+  }
   .form {
     height: 400px;
     width: 850px;
@@ -626,7 +630,7 @@ p.b {
     font-size: 0.85rem;
   }
   .input_fields p {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
   .form_details {
     width: 85%;
@@ -659,12 +663,20 @@ p.b {
     display: block;
     margin-right: 2em;
   }
-
+  h1.about{
+    font-size: 50px;
+  }
   .about {
     text-align: center;
   }
   .aboutme2 {
     flex-direction: column;
+  }
+  .desc{
+    padding-left: 10%;
+  }
+  .scrolltotop{
+    padding: 20px;
   }
   .img2container {
     height: 250px;
@@ -676,7 +688,7 @@ p.b {
     margin-top: 40px;
   }
   .skills-main h1 {
-    font-size: 60px;
+    font-size: 50px;
   }
   .skills img {
     height: 60px;
@@ -707,7 +719,7 @@ p.b {
     /* width:80%; */
   }
   .a {
-    font-size: 60px;
+    font-size: 50px;
   }
   .f {
     margin: 0;
@@ -726,6 +738,7 @@ p.b {
   }
   .form_details {
     grid-template-columns: auto;
+    justify-items: center;
   }
   .contact h1 {
     font-size: 15px;
@@ -778,6 +791,16 @@ p.b {
   visibility: inherit;
 }
 @media screen and (max-width: 425px) {
+  .aboutme2{
+    padding: 20px;
+  }
+  .img2container{
+    width: 100px;
+    height: 100px;
+  }
+  h1.name{
+    font-size: 30px;
+  }
   .skills img {
     height: 35px;
     width: 35px;
